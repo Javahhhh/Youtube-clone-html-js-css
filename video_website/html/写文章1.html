@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.total{
+				width: 80%;
+				height: 800px;
+				margin: auto;
+				border: 1px #fff solid;
+				border-radius: 5%;
+				background-color: blanchedalmond;
+				display: flex;
+				flex-direction: column;
+			}
+			.list1,
+			.list2,
+			.list3{
+				display: flex;
+				flex-direction: row;
+				
+				
+			}
+			.list1{
+				width: 100%;
+				height: 60px;
+				
+				margin: 30px 0px 20px 0px;
+				
+			}
+			.list1-left{
+				padding-top: 10px;
+			}
+			.list1-left,
+			.list2-left,
+			.list3-left{
+				width: 20%;
+				height: 60px;
+				text-align: end;
+				padding-right: 20px;
+				margin-top: 8px;
+				font-size: 20px;
+				color: brown;
+			}
+			
+			textarea{
+				width: 70%;
+				border: 1px #fff solid;
+				border-radius: 5px;
+				margin: 10px;
+				overflow-y:auto
+				/* 去除边框 */
+				border: none;
+				resize: none;
+				/* 去除选中后的边框 */
+				outline:none;
+				font-size:20px;
+			}
+			.list2{
+				width: 100%;
+				height: 500px;
+		
+			}
+			.list2-left{
+				padding-top: 5px;
+			}
+			.list3-left{
+				padding-top: 10px;
+			}
+			.list3-right{
+				width: 280px;
+				height: 200px;
+				margin:20px 0px 25px 10px;
+				border: 1px #fff solid;
+				border-radius: 5px;
+				background-color: #fff;
+				
+			}
+			.list3-right-button{
+				height: 30px;
+				width: 70px;
+				border-style: none;
+				border-radius: 5px;
+				background-color: #ffdd8b;
+				color: brown;
+				font-size: 16px;
+				margin-top: 190px;
+				margin-left: 20px;
+				cursor: pointer;
+			}
+			img{
+				width: 90%;
+				margin: 25px 10px 10px 15px;
+			}
+			select{
+				height: 40px;
+				border-radius: 5px;
+				background-color: #ffdd8b;
+				color: brown;
+				font-size: 16px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="total">
+			<div class="list1">
+				<div class="list1-left">
+					请输入文章标题
+				</div>
+				<textarea class="lsit1-right" id="textarea1"></textarea>
+				
+			</div>
+			<div class="list2">
+				<div class="list2-left">
+					请输入文章预览内容
+				</div>
+				<textarea class="lsit2-right" id="textarea2"></textarea>
+			</div>
+			<div class="list3">
+				<div class="list3-left">
+					请输入文章预览图片
+				</div>
+				<select id="select-content" onchange="submit()">
+				  <option value="" selected>选择图片</option>
+				  <option value="option1">../img/电视剧/欢迎光临.png</option>
+				  <option value="option2">../img/电视剧/欢迎光临.png</option>
+				  <option value="option3">../img/电视剧/欢迎光临.png</option>
+				  <option value="option4">../img/电视剧/欢迎光临.png</option>
+				</select>
+				<div class="list3-right">
+					
+						<img src=""/  id="list3-img">
+					
+				</div>
+				<button   class="list3-right-button" onclick="submitContent()">提交</button>
+			</div>
+		</div>
+		
+		<script>
+			var selectedOption;
+			  function submit() {
+			       var selectElement = document.getElementById('select-content');
+			       var index = selectElement.selectedIndex;
+			        selectedOption = selectElement.options[index].text;
+			 
+			       var imgElement = document.getElementById('list3-img');
+			       imgElement.src = selectedOption;
+			 
+			    }
+			
+		  function submitContent() {
+		    var textarea1 = document.getElementById('textarea1');
+		    var textarea2 = document.getElementById('textarea2');
+		    var content1 = textarea1.value;
+		    var content2 = textarea2.value;
+			var content3 = selectedOption;
+		    var packagedContent = {
+		      content1: content1,
+		      content2: content2,
+			  content3: content3
+		    };
+		
+		    window.opener.postMessage(packagedContent, '*');
+		  }
+		</script>
+	</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>聊天界面</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
+		<link rel="stylesheet" href="../css/聊天界面.css" />
+	</head>
+	<body>
+		<!--搜索框，导航栏-->
+		<div class="top">
+			<div class="top-left">
+				<a target="_blank" href="./评论首页.html" > << 返回 </a>
+				<a target="_blank" href="./评论首页.html" >评论首页</a>
+				<a target="_blank" href="./电影评论.html" >电影评论</a>
+				<a target="_blank" href="./电视剧评论.html" >电视剧评论</a>
+				<a target="_blank" href="./动漫评论.html" >动漫评论</a>
+			</div>
+			<div class="top-center">
+				<button><i class="fa-solid fa-magnifying-glass"></i></button>
+			</div>
+			<div class="top-right">
+				<div id="history" onclick="toggleHistory()">
+					<span>历史记录</span>
+					<div id="history-content" style="display: none;">
+						<a  class="myhistory" href="">《万里归途》：主流叙事的一次细腻转型</a>
+						<a class="myhistory" href="">《万里归途》：主流叙事的一次细腻转型</a>
+						<a class="myhistory" href="">《万里归途》：主流叙事的一次细腻转型</a>
+						<a  class="myhistory" href="">《万里归途》：主流叙事的一次细腻转型</a>
+						<a class="myhistory" href="">《万里归途》：主流叙事的一次细腻转型</a>
+						<a class="myhistory" href="">《万里归途》：主流叙事的一次细腻转型</a>
+									
+					</div>
+				</div>
+				
+				<!-- 收藏 -->
+									
+				<div id="collection" onclick="toggleColection()">
+					<span>收藏</span>
+					<div id="collection-content" >
+						<a class="mycollection" href="">《万里归途》：主流叙事的一次细腻转型</a>
+						<a class="mycollection"  href="">《万里归途》：主流叙事的一次细腻转型</a>
+						<a class="mycollection"  href="">《万里归途》：主流叙事的一次细腻转型</a>
+						<a class="mycollection"  href="">《万里归途》：主流叙事的一次细腻转型</a>
+						<a class="mycollection"  href="">《万里归途》：主流叙事的一次细腻转型</a>
+						<a class="mycollection"  href="">《万里归途》：主流叙事的一次细腻转型</a>
+									
+									
+					</div>
+				</div>
+				<!-- 消息 -->
+				<div id="message" onclick="togglemessage()">
+					<span>消息</span>
+					<div id="message-content" >
+						<a class="mynessage" href=".">回复我的</a>
+						<a class="mynessage" href="">@我的</a>
+						<a class="mynessage" href="./系统通知.html" target="_blank">系统消息</a>
+						<a class="mynessage" href="./聊天界面.html" target="_blank">我的消息</a>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+		<!--上面是搜索框，导航栏-->
+		<div class="zong">
+			<div class="left">
+				<div class="left-top">
+					<p>消息中心</p>
+				</div>
+				<div class="left-center">
+					<ul>
+						<li>回复我的</li>
+						<li>@我的</li>
+						<li>收到的赞</li>
+					<li><a href="./系统通知.html" target="_blank">系统消息</a></li>
+					<li><a href="./聊天界面.html" target="_blank">我的消息</a></li>	
+					</ul>
+				</div>
+				<div class="left-bottom">
+					消息设置
+				</div>
+			</div>
+			<div class="right">
+				<div class="right-top">
+					我的消息
+				</div>
+				<div class="right-bottom">
+					<div class="right-left">
+						<div class="right-left-top">
+							近期消息
+						</div>
+						<div class="right-left-bottom">
+							<div class="user">
+								<div class="img">
+									<img  src="../img/聊天界面/乡村振兴题材.png"/>
+								</div>
+								<div class="name-message">
+									<div class="name">晚风</div>
+									<div class="message">你好！</div>
+								</div>
+							</div>
+							<div class="user">
+								<div class="img">
+									<img src="../img/聊天界面/梅艳芳.png">
+								</div>
+								<div class="name-message">
+									<div class="name">工藤新医</div>
+									<div class="message">你好！</div>
+								</div>
+							</div>
+							<div class="user">
+								<div class="img">
+									<img src="../img/聊天界面/ACG.png">
+								</div>
+								<div class="name-message">
+									<div class="name">ACG中二君
+</div>
+									<div class="message">你好！</div>
+								</div>
+							</div>
+							<div class="user">
+								<div class="img">
+									<img src="../img/聊天界面/电影.png">
+								</div>
+								<div class="name-message">
+									<div class="name">电影最TOP</div>
+									<div class="message">你好！</div>
+								</div>
+							</div>
+							<div class="user">
+								<div class="img">
+									<img src="../img/聊天界面/西安.png">
+								</div>
+								<div class="name-message">
+									<div class="name">君在西安</div>
+									<div class="message">你好！</div>
+								</div>
+							</div>
+							<div class="user">
+								<div class="img">
+									<img src="../img/聊天界面/柯基.png">
+								</div>
+								<div class="name-message">
+									<div class="name">柯基大聪明</div>
+									<div class="message">你好！</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="right-right">
+						<div class="right-right-top"></div>
+						<div class="right-right-bottom">
+							<div class="chat-messages" id="chat-messages">
+								<!-- 示例消息 -->
+								<div class="received">
+									<img class="received-img" src="../img/动漫/灵笼.png" alt="对方的头像">
+									<div class="received-message">我关注了你，让我们来聊天吧</div>
+								</div>
+								<div class="sent">
+									
+									<div class="sent-message">你好！</div>
+									<img class="sent-img" src="../img/电影/梅艳芳.png" alt="自己的头像">
+								</div>
+								<div class="received">
+									<img class="received-img" src="../img/动漫/灵笼.png" alt="对方的头像">
+									<div class="received-message">你好！</div>
+								</div>
+								    
+							</div>
+							<div class="send">								
+								<textarea   id="message-input" rows="行数" cols="列数" name="名称"></textarea>
+							</div>
+							<div class="sent-to">
+								<button id="send-button">发送</button>
+							</div>
+								 
+								
+								
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="../js/聊天界面.js"></script>
+	</body>
+</html>

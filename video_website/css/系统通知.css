@@ -1,0 +1,236 @@
+body{
+				background-color: #353535;
+				display: flex;
+				flex-direction: column;
+			}
+			.zong{
+			
+				height:800px;
+				margin: 10px 10% 0px 10%;
+				display: flex;
+				flex-direction: row;
+				font-family: KaiTi,STXingkai, SimSun, Song,  serif;
+				font-size: 120%;
+				
+			}
+			/*搜索框，导航栏*/
+			.top{
+				width: 100%;
+				height: 80px;
+				top: 0%;
+				margin-bottom: 10px;
+				border-bottom: white 1px solid;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				background-color: black;
+				z-index: 2;
+			}
+			.top-left{
+				padding: 28px;
+				width: 30%;
+				background-color: black;
+			}
+			.top-left a{
+				color: #e2e2e2;
+				margin-right: 20px;
+				text-decoration: none;
+				
+			}
+			.top-center{
+				
+			}
+			.top-center button{
+				width: 180px;
+				height: 25px;
+				margin: 28px;
+				background-color: #444444;
+				border: none;
+				border-radius: 5px;
+				box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+				opacity: 0.5;
+				
+			}
+			.top-right{
+				width: 30%;
+				margin-top: 30px;
+				margin-right: -180px;
+				display: flex;
+				flex-direction: row;
+				
+				
+			}
+			
+			.fa-solid{
+				float: right;
+				font-size: 15px;
+				color: #a7a7a7;
+			}
+			#history-content,
+			  #collection-content,
+			  #message-content {
+			    display: none; /* 默认隐藏下拉内容 */
+			    position: absolute; /* 绝对定位，使其脱离文档流 */
+			    background-color: white; /* 背景颜色 */
+			    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* 阴影效果 */
+			    z-index: 1; /* 确保下拉内容在其他内容之上 */
+			  }
+			  
+			  /* 下拉菜单项样式 */
+			  .myhistory, .mycollection, .mynessage {
+			    color: #080808; /* 文字颜色 */
+			    padding: 12px 16px; /* 内边距 */
+			    text-decoration: none; /* 去除下划线 */
+			    display: block; /* 块级元素，占满整行 */
+			  }
+			
+				
+				.myhistory:hover, .mycollection:hover, .mynessage:hover {
+				    background-color: #ddd; /* 鼠标悬停时的背景颜色 */
+				  }
+			
+			span{
+				color: white;
+				cursor: pointer;
+				margin-right: 40px;
+			}
+			
+			 
+			/*上面是搜索框，导航栏*/
+			.left{
+				width: 15%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				 background-color: rgba(255, 255, 255,0.8);
+			}
+			.left-top{
+				padding: 20px;
+				border-width: 0px 0px 0.2px 0px;
+				border-color:black;
+				border-style: solid;
+				
+			}
+			.left-top p{
+				
+			}
+			.left-center{
+				
+				    color: white;
+				    
+				    padding: 14px 16px;
+				    text-decoration: none;
+			}
+			.left-center li{
+				padding: 10px;
+				color: black;
+				font-size: 18px;
+			}
+			.left-center a{
+				text-decoration: none;
+				color: #121212;
+			}
+			.left-center a:hover{
+				color: #3845ff;
+			}
+			.left-bottom{
+				height: 50%;
+				padding: 20px;
+				border-width: 0.2px 0px 0px 0px;
+				border-color:black;
+				border-style: solid;
+				color: black;
+				font-size: 20px;
+				
+				
+			}
+			.left-bottom{
+				height: 50%;
+				padding: 20px;
+				border-width: 0.2px 0px 0px 0px;
+				border-color:black;
+				border-style: solid;
+				color: black;
+				font-size: 20px;
+				
+				
+			}
+			.right{
+				width: 80%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				background-color: rgba(255, 255, 255,0.5)
+			}
+			.right-top{
+				
+				height: 3%;
+				margin: 10px 25px 10px 10px;
+				padding: 10px;
+				border-radius: 5px;
+				border-width: 0px 0px 0.1px 0px;
+				background-color: rgba(240,248,255,0.8);
+			}
+			
+			.right-centertotal{
+				overflow: auto;
+			}
+			.right-centertotal::-webkit-scrollbar {
+			  width: 8px; /* 设置滚动条宽度 */
+			}
+			
+			.right-centertotal::-webkit-scrollbar-track {
+			  background-color: rgba(240,248,255,0.8); /* 设置滚动条背景色 */
+			  border-radius: 10px;
+			}
+			
+			.right-centertotal::-webkit-scrollbar-thumb {
+			  background-color: #888; /* 设置滚动条滑块颜色 */
+			  border-radius: 10px; /* 设置滚动条滑块的圆角 */
+			}
+			
+			.right-centertotal::-webkit-scrollbar-thumb:hover {
+			  background-color: #555; /* 设置滚动条滑块在鼠标悬停时的颜色 */
+			}
+
+			.custom-list {
+			  list-style: none; /* 移除默认的小圆点 */
+			}
+			
+			.custom-list li {
+			  position: relative;
+			  padding-left: 10px; /* 调整左边距与小圆点之间的间距 */
+			}
+			
+			.custom-list li::before {
+			  content: "";
+			  position: absolute;
+			  
+			  right: 100%;
+			  top:41%;
+			  
+			  width: 8px; /* 圆点的宽度 */
+			  height: 8px; /* 圆点的高度 */
+			  background-color: #515151; /* 圆点的颜色 */
+			  border-radius: 50%; /* 将正方形的圆点设置为圆形 */
+			}
+
+			.right-center-1{
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				margin: -10px 0px -35px 10px;
+			}
+			.time{
+				margin-left: 20px;
+				font-size: 15px;
+			}
+			.message{
+				
+				margin-left: 20px;
+				font-size: 15px;
+				
+			}
+			.message a{
+				text-decoration: none;
+			}

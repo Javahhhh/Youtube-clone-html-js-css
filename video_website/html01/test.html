@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body {
+			    font-family: Arial, sans-serif;
+			}
+			
+			.modal {
+			    display: none;
+			    position: fixed;
+			    top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+			    background-color: white;
+			    padding: 20px;
+			    border-radius: 5px;
+			    z-index: 1000;
+			}
+			
+			.modal-content {
+			    width: 400px;
+			}
+			
+			.close {
+			    float: right;
+			    font-size: 24px;
+			    cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+ <button id="loginBtn">登录</button>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form>
+                <label for="username">用户名:</label>
+                <input type="text" id="username" required>
+                <label for="password">密码:</label>
+                <input type="password" id="password" required>
+                <button type="submit">登录</button>
+            </form>
+        </div>
+    </div>
+		<script>
+	// 获取登录浮窗元素
+	const loginModal = document.getElementById('loginModal');
+	const closeBtn = document.getElementsByClassName('close')[0];
+	
+	// 显示登录浮窗
+	function showLoginModal() {
+	    loginModal.style.display = 'block';
+	}
+	
+	// 隐藏登录浮窗
+	function closeLoginModal() {
+	    loginModal.style.display = 'none';
+	}
+	
+	// 为关闭按钮添加点击事件监听器
+	closeBtn.onclick = closeLoginModal;
+	
+	// 为登录按钮添加点击事件监听器
+	document.getElementById('loginBtn').onclick = showLoginModal;
+		</script>
+	</body>
+</html>

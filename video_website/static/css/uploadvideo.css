@@ -1,0 +1,221 @@
+.card_size {
+	/* width: 400px; */
+}
+
+.card_size > div{
+	display: inline-block;
+} 
+
+.uploadVideoButton {
+	width: 350px;
+	height: 300px;
+	line-height: 300px;
+	border: 1px solid #ccc;
+	margin: 25px 25px;
+	padding: 0;
+	font-size: 45px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.uploadCompleted {
+	width: 350px;
+	height: 300px;
+	border: 1px solid #ccc;
+	margin: 25px 25px;
+	padding: 0;
+	vertical-align: middle;
+}
+
+.uploadCompleted_image{
+	width: 350px;
+	height: 250px;
+	border: 1px solid black;
+}
+
+.uploadCompleted_title{
+	
+}
+
+input[type="file"] {
+	display: none;
+}
+
+.write_video_information {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.write_video_information_background {
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+	background-color: black;
+}
+
+.write_video_information_main {
+	width: 700px;
+	height: 500px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -250px 0 0 -350px;
+	background-color: white;
+}
+
+.write_video_size {
+	padding: 0 12px;
+}
+
+.video_information_title {
+	padding: 16px 20px;
+}
+
+.video_information_body {
+	margin-top: 20px;
+}
+
+.video_information_body h5 {
+	display: inline;
+}
+
+.video_information_body input {
+	width: 300px;
+	padding: 8px 0 8px 10px;
+	outline: none;
+}
+
+.information_control {
+	position: absolute;
+	right: 15px;
+	bottom: 10px;
+}
+
+.information_submit {
+	margin-bottom: 1px;
+}
+
+.information_quxiao {
+	width: 56px;
+	height: 32px;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	line-height: 32px;
+	box-shadow: 0px 0px 1px black;
+	/* -1px 1px 1px black,
+				1px -1px 1px black,
+				1px 1px 1px black; */
+	border-radius: 3px;
+	transition: 0.2s linear;
+	margin-left: 8px;
+
+}
+
+.information_quxiao:hover {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.video_information_input_title {
+	margin-left: 20px;
+	color: gray;
+}
+
+.video_information_input_content {
+	margin-top: 15px;
+	margin-left: 20px;
+	color: gray;
+}
+
+.video_information_body .video_information_input_content{
+	width: 300px;
+	padding: 8px 0 100px 10px;
+	outline: none;
+	resize: none;
+	vertical-align: middle;
+}
+
+.InsertImg {
+	display: inline-block;
+}
+
+.InsertImgComplete {
+	display: inline-block;
+	position: relative;
+	margin-top: 15px;
+}
+
+.InsertImgComplete img {
+	width: 150px;
+	height: 100px;
+	display: inline-block;
+}
+
+.InsertVideo{
+	display: inline-block;
+}
+
+.InsertVideoComplete {
+	display: inline-block;
+	position: relative;
+	margin-top: 15px;
+}
+
+.InsertVideoComplete video {
+	width: 150px;
+	height: 100px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ImageCloseButton {
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	background-color: rgba(255,255,255, 0.75);
+	right: 0;
+	top: 0;
+	font-size: 14px;
+	text-align: center;
+	line-height: 18px;
+	cursor: pointer;
+}
+
+.VideoCloseButton {
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	background-color: rgba(255,255,255, 0.75);
+	right: 0;
+	top: 0;
+	font-size: 14px;
+	text-align: center;
+	line-height: 18px;
+	cursor: pointer;
+}
+
+.uploadImage {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	cursor: pointer;
+	margin-top: 15px;
+}
+
+.uploadVideo {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	border: 1px solid #ccc;
+	display: inline-block;
+	cursor: pointer;
+	margin-top: 15px;
+}

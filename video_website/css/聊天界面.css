@@ -1,0 +1,349 @@
+body{
+				background-color: #353535;
+				display: flex;
+				flex-direction: column;
+			}
+			.zong{
+			
+				height:800px;
+				margin: 10px 10% 0px 10%;
+				display: flex;
+				flex-direction: row;
+				font-family: KaiTi,STXingkai, SimSun, Song,  serif;
+				font-size: 120%;
+			}
+			/*搜索框，导航栏*/
+			.top{
+				width: 100%;
+				height: 80px;
+				top: 0%;
+				margin-bottom: 10px;
+				border-bottom: white 1px solid;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				background-color: black;
+				z-index: 2;
+			}
+			.top-left{
+				padding: 28px;
+				width: 30%;
+				background-color: black;
+			}
+			.top-left a{
+				color: #e2e2e2;
+				margin-right: 20px;
+				text-decoration: none;
+				
+			}
+			.top-center{
+				
+			}
+			.top-center button{
+				width: 180px;
+				height: 25px;
+				margin: 28px;
+				background-color: #444444;
+				border: none;
+				border-radius: 5px;
+				box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+				opacity: 0.5;
+				
+			}
+			.top-right{
+				width: 30%;
+				margin-top: 30px;
+				margin-right: -180px;
+				display: flex;
+				flex-direction: row;
+				
+				
+			}
+			
+			.fa-solid{
+				float: right;
+				font-size: 15px;
+				color: #a7a7a7;
+			}
+			/*上面是搜索框，导航栏*/
+			.left{
+				width: 15%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				 background-color: rgba(255, 255, 255,0.8);
+			}
+			.left-top{
+				padding: 20px;
+				border-width: 0px 0px 0.2px 0px;
+				border-color:black;
+				border-style: solid;
+				
+			}
+			.left-top p{
+				
+			}
+			.left-center{
+				
+				    color: white;
+				    
+				    padding: 14px 16px;
+				    text-decoration: none;
+			}
+			.left-center li{
+				padding: 10px;
+				color: black;
+				font-size: 18px;
+			}
+			.left-center a{
+				text-decoration: none;
+				color: #121212;
+			}
+			.left-center a:hover{
+				color: #3845ff;
+			}
+			.left-bottom{
+				height: 50%;
+				padding: 20px;
+				border-width: 0.2px 0px 0px 0px;
+				border-color:black;
+				border-style: solid;
+				color: black;
+				font-size: 20px;
+				
+				
+			}
+			.right{
+				width: 80%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				background-color: rgba(255, 255, 255,0.5)
+			}
+			.right-top{
+				
+				height: 3%;
+				margin: 10px;
+				padding: 10px;
+				border-radius: 5px;
+				border-width: 0px 0px 0.1px 0px;
+				background-color: rgba(240,248,255,0.8);
+			}
+			.right-bottom{
+				
+				height: 80%;
+				margin: 10px;
+				padding: 10px;
+				display: flex;
+				flex-direction: row;
+				border-radius: 5px;
+				background-color: rgba(240,248,255,0.8);
+			}
+			.right-left{
+				width: 30%;
+				display: flex;
+				flex-direction:column;
+			}
+			.right-left-top{
+				
+				height: 5%;
+				padding: 0px 10px;
+				border-style: solid;
+				border-color: black;
+				border-width: 0px 0.1px 0.1px 0px;
+			}
+			.right-left-bottom{	
+				display: flex;
+				flex-direction: column;
+				
+				
+			}
+			.right-right{
+				width: 70%;
+				
+			}
+			.right-right-top{
+				
+				border-width: 0.2px;
+				height: 5%;
+			}
+			.right-right-bottom{
+				
+				height: 90%;
+				border: 1px ;
+				
+			}
+			.user {
+			  display: flex;
+			  align-items: center;
+			  height: 94px;
+			  border: 1px ;
+			  
+			  border-style: solid;
+			  border-color: black;
+			  border-width: 0px 0px 0.1px 0px;
+			}
+			
+			.img {
+			  width: 60px;
+			  height:60px;
+			  margin: 10px;
+			  overflow: hidden;
+			  border-radius: 50%;
+			}
+			
+			.img img {
+			  width: 100%;
+			  height: 60px;
+			}
+			.name{
+				font-size: 18px;
+			}
+			.message{
+				font-size: 12px;
+			}
+			
+			.chat-messages{
+				height: 60%;
+				width: 100%;
+				border-style: solid;
+				border-color: black;
+				border-width: 0.1px;
+				display: flex;
+				flex-direction:column;
+				overflow: auto;
+			}
+			.chat-messages::-webkit-scrollbar {
+			  width: 8px; /* 设置滚动条宽度 */
+			}
+			
+			.chat-messages::-webkit-scrollbar-track {
+			  background-color: rgba(240,248,255,0.8); /* 设置滚动条背景色 */
+			  border-radius: 10px;
+			}
+			
+			.chat-messages::-webkit-scrollbar-thumb {
+			  background-color: #888; /* 设置滚动条滑块颜色 */
+			  border-radius: 10px; /* 设置滚动条滑块的圆角 */
+			}
+			
+			.chat-messages::-webkit-scrollbar-thumb:hover {
+			  background-color: #555; /* 设置滚动条滑块在鼠标悬停时的颜色 */
+			}
+			.received{
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-start;
+			}
+			.received-img{
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-color: bisque;
+			}
+			.received-message{
+				height: 40px;
+				margin: 10px;
+				border-radius: 5px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: aliceblue;
+			}
+			.sent{
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-end;
+			}
+			.sent-img{
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-color: bisque;
+			}
+			.sent-message{
+				height: 40px;
+				margin: 10px;
+				border-radius: 5px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: yellowgreen;
+			}
+			.send{
+				height: 30%;
+				width: 100%;
+				border-style: solid;
+				border-color: black;
+				border-width: 0px 0.1px 0px 0.1px;
+				position: relative;
+				
+			}
+			textarea {
+				background-color: rgba(240,248,255,0.8);
+				text-align:left;
+				float: left;
+			    border: none;
+				outline: none;
+				font-size: 18px;
+			    }
+			#message-input{
+				
+				width: 99%;
+				height: 97%;
+				background-color:rgba(240,248,255,0.2);
+			}
+			
+			
+			
+			
+			.sent-to{
+				height: 9%;
+				width: 100%;
+				border-style: solid;
+				border-color: black;
+				border-width: 0px 0.1px 0.1px 0.1px;
+				position: relative;
+			}
+			#send-button {
+			  width: 70px;
+			  height: 30px;
+			  float: right;
+			  margin: 10px;
+			  text-align: center;
+			  border-style: solid;
+			  border-color: black;
+			  border-width: 0.2px;
+			}
+			
+			
+			#history-content,
+			  #collection-content,
+			  #message-content {
+			    display: none; /* 默认隐藏下拉内容 */
+			    position: absolute; /* 绝对定位，使其脱离文档流 */
+			    background-color: white; /* 背景颜色 */
+			    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* 阴影效果 */
+			    z-index: 1; /* 确保下拉内容在其他内容之上 */
+			  }
+			  
+			  /* 下拉菜单项样式 */
+			  .myhistory, .mycollection, .mynessage {
+			    color: #080808; /* 文字颜色 */
+			    padding: 12px 16px; /* 内边距 */
+			    text-decoration: none; /* 去除下划线 */
+			    display: block; /* 块级元素，占满整行 */
+			  }
+			
+				
+				.myhistory:hover, .mycollection:hover, .mynessage:hover {
+				    background-color: #ddd; /* 鼠标悬停时的背景颜色 */
+				  }
+			
+			span{
+				color: white;
+				cursor: pointer;
+				margin-right: 40px;
+			}
+			
+			 

@@ -1,0 +1,447 @@
+			.total{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				background-color: black;
+				font-family: SongTi;
+				z-index: 1;
+				
+			}
+			.top{
+				width: 100%;
+				height: 80px;
+				top: 0%;
+				margin-bottom: 30px;
+				border-bottom: white 1px solid;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				background-color: black;
+				z-index: 2;
+			}
+			.top-left{
+				padding: 28px;
+				width: 28%;
+				background-color: black;
+			}
+			.top-left a{
+				color: #e2e2e2;
+				margin-right: 20px;
+				text-decoration: none;
+				
+			}
+		
+			.top-center input{
+				width: 200px;
+				height: 25px;
+				font-size: 15px;
+				margin-right: 10px;
+				background-color: #444444;
+				border: none;
+				outline: none;
+				color: white;
+				
+			}
+			.top-center{
+				width: 30%;
+			}
+			.search{
+				width: 250px;
+				margin: 25px 0px 0px 30px;
+				
+				border: none;
+				border-radius: 5px;
+				box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+				background-color: #444444;
+			}
+			#search-results{
+				
+				font-size: 18px;
+				border: none;
+				border-radius: 5px;
+				box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+				background-color: #c6c6c6;
+				z-index: 3;
+				list-style: none;
+			}
+			#search-results a{
+				color: #080808;
+				text-decoration: none;
+			}
+			#search-results a:hover{
+				color: #0363ff;
+			}
+			
+			.fa-solid{
+				margin: 10px 0px 0px 8px;
+				font-size: 18px;
+				color: #a7a7a7;
+				cursor: pointer;
+			}
+			.top-right{
+				width: 30%;
+				margin-top: 30px;
+				margin-right: -180px;
+				display: flex;
+				flex-direction: row;
+				
+				
+			}
+			
+			
+			.center{
+				width: 80%;
+				margin: auto;
+				border-radius: 15px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				background-color: white;
+				cursor: pointer;
+			}
+			.center-left{
+				width: 80%;
+				margin: 10px;
+				
+			}
+			.article{
+				border-bottom: #444444 1px solid;
+				border-right: #444444 1px solid;
+				display: flex;
+				flex-direction: row;
+				min-height: 100px
+				
+			}
+			.article img{
+				margin: 5px 20px 10px 5px;				
+				width: 230px;
+				height: 150px;
+				
+				
+			}
+			.article-right{
+				width: 90%;
+				display: flex;
+				flex-direction: column;
+				
+			}
+			.article-right a{
+				color:black;
+				font-size: 22px;
+				text-decoration: none;
+			}
+			.article-right a:hover{
+				color: #0363ff;
+				
+			}
+			.article-right p{
+				margin: 10px 0px;
+				color: black;
+				font-size: 20px;
+				font-family: KaiTi;
+			}
+			.article-right h3{
+				margin: 8px;
+			}
+			.article-module{
+				
+				
+				background-color: cyan;
+			}
+			.center-right{
+				width: 20%;
+				margin: 10px 20px 10px 10px;
+				display: flex;
+				flex-direction: column;
+				
+			}
+			.list1{
+				width: 100%;
+				height: 200px;
+				border-bottom: #444444 1px solid;
+				margin-bottom: 10px;
+				display: flex;
+				flex-direction: column;
+				
+			}
+			.list1-top{
+				width: 100%;
+				height: 20%;
+				padding: 10px;
+				
+			}
+			.list1-top p{
+				
+			}
+			.list1-center{
+				width: 100%;
+				height: 60%;
+				text-align: center;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+			.list1-center img{
+				width: 60px;
+				height: 60px;
+				cursor: pointer;
+			}
+			.list1-center p{
+				margin: 5px;
+				cursor: pointer;
+			}
+			.list1-center p:hover{
+				color: #0363ff;
+			}
+			.list1-bottom{
+				width: 100%;
+				height: 20%;
+				text-align: center;
+			}
+			.list1-bottom p{
+				color: #2365ff;
+				font-size: 18px;
+				cursor: pointer;
+			}
+			.list2{
+				width: 100%;
+				height: 200px;
+				padding: 5px;
+				margin: 10px 0px 10px 0px;
+				
+			}
+			.list2 img{
+				width: 100%;
+				height: 100%;
+			}
+			//轮播图
+			
+			//轮播图
+			.list3{
+				width: 100%;
+				height: 340px;
+				display: flex;
+				flex-direction: column;
+				
+				border-left:  #444444 1px solid;
+				
+				margin: 10px 0px 10px 0px;
+			}
+			.list3-top{
+				margin-bottom:10px;
+				height: 10%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				border-top: #444444 1px solid;
+			}
+			.list3-top p{
+				margin:10px 5px 0px 15px;
+			}
+			.refresh:hover{
+				color: #2365ff;
+				cursor: pointer;
+			}
+			.list3-bottom{
+				height: 90;
+				width: 100%;
+				text-decoration: none;
+				display: flex;
+				flex-direction: column;
+			}
+			.list3-bottom a{
+				width: 100%;
+				color: black;
+				cursor: pointer;
+				text-decoration: none;
+				margin-top: 10px;
+				margin-left: 10px;
+				font-family: KaiTi;
+				font-size: 17px;
+			}
+			.list3-bottom a:hover{
+				color: #0363ff;
+			}
+			
+			.list4{
+				width: 100%;
+				height: 300px;
+				display: flex;
+				flex-direction: column;
+				border-top: 1px #444444 solid;
+				
+				
+			}
+			.list4-top{
+				height: 10%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+			.list4-bottom{
+				width: 100%;
+				height: 90%;
+				color: black;
+				margin-top:15px;
+				padding: 10px;
+				
+				
+			}
+			.list4-top p{
+				margin:10px 5px 0px 15px;
+			}
+			.tag1{
+				width: 50px;
+				height: 45px;
+				padding: 8px;
+				margin: 5px;
+				background-color: #a7a7a7;
+				border-radius: 5px;
+				border: none;
+				cursor: pointer;
+				font-size: 16px;
+			}
+			.tag2{
+				width: 110px;
+				height: 45px;
+				padding: 10px;
+				border: none;
+				border-radius: 5px;
+				background-color: #a7a7a7;
+				cursor: pointer;
+				font-size: 16px;
+			}
+			.tag3{
+				width: 80px;
+				height: 45px;
+				padding: 8px;
+				border: none;
+				border-radius:10px;
+				background-color: #a7a7a7;
+				cursor: pointer;
+				font-size: 16px;
+				}
+				
+				button:hover{
+					color: #0363ff;
+					}
+			.bottom{
+				width: 100%;
+				height: 200px;
+				margin-top: 50px;
+				display: flex;
+				flex-direction: column;
+				
+			}
+			.friend-link{
+				width: 100%;
+				height: 80px;
+				margin-bottom: 10px;
+				background-color: black;
+				color:white;
+				font-size: 19px;
+				
+			}
+			.friend-link-top{
+				margin: 10px;
+				padding: 10px;
+				color:white;
+				font-size: 19px;
+				border-bottom:1px solid white ;
+			}
+			.friend-link-bottom{
+				margin: 10px;
+				padding: 10px;
+			}
+			.friend-link-bottom a{
+				margin:20px 20px 20px 0px;
+				text-decoration: none;
+				color:white;
+			}
+			.friend-link-bottom a:hover{
+				color: #0363ff;
+				cursor: pointer;
+			
+			}
+
+			.footer{
+				width: 100%;
+				height: 80px;
+				margin-top: 10px;
+				color:white;
+				font-size: 19px;
+				text-align: center;
+			}
+			.footer-top{
+				color:white;
+				font-size: 19px;
+				margin-bottom:20px ;
+			}
+			#history-content,
+			  #collection-content,
+			  #message-content {
+			    display: none; /* 默认隐藏下拉内容 */
+			    position: absolute; /* 绝对定位，使其脱离文档流 */
+			    background-color: white; /* 背景颜色 */
+			    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* 阴影效果 */
+			    z-index: 1; /* 确保下拉内容在其他内容之上 */
+			  }
+			  
+			  /* 下拉菜单项样式 */
+			  .myhistory, .mycollection, .mynessage {
+			    color: #080808; /* 文字颜色 */
+			    padding: 12px 16px; /* 内边距 */
+			    text-decoration: none; /* 去除下划线 */
+			    display: block; /* 块级元素，占满整行 */
+			  }
+			
+				
+				.myhistory:hover, .mycollection:hover, .mynessage:hover {
+				    background-color: #ddd; /* 鼠标悬停时的背景颜色 */
+				  }
+			
+			span{
+				color: white;
+				cursor: pointer;
+				margin-right: 40px;
+			}
+			
+			.fade {
+			  animation-name: fade;
+			  animation-duration: 8s;
+			}
+					
+			@keyframes fade {
+			  from {opacity: 0.4} 
+			  to {opacity: 1}
+			}
+			.last{
+				
+				left: 10px;
+				position: absolute;
+				font-size: 18px;
+				display: none;
+			}
+			.next{				
+				position: absolute;
+				left: 240px;
+				font-size: 18px;
+				display: none;
+			}
+			.list2{
+				display: flex;
+				flex-direction: row;
+				position: relative;
+				align-items: center;
+			}
+			.list2:hover .next,
+			.list2:hover .last{
+				display: block;
+			}
+			.article-module{
+				background-color: white;
+				text-align: end;
+				margin-right:  10px;
+				
+			}
+			

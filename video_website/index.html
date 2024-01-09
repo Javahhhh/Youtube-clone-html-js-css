@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="images/png" rel="icon" href="images/icons8-youtube.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>kilikili</title>
+</head>
+
+<body>
+    <!--    header      -->
+    <header class="header">
+        <div class="header_container">
+            <div class="none"> </div>
+            <div class="modal">
+                <div class="search">
+                    <input type="text" id="searchInput" placeholder="搜索...">
+                    <i id="seek" class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <ul id="conter" class="modal-conter" style="display: none;">
+                </ul>
+            </div>
+            <div class="user">
+               
+
+                <div class="img">
+					<a href="static/pages-sign-in.html">
+						<img class="subscribe" src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-people-victoruler-flat-victoruler-5.png" alt="">
+					</a>
+                </div>
+            </div>
+
+            <div class="toggle">
+                <i class="fa-solid fa-bars" id="header-toggle"></i>
+            </div>
+        </div>
+    </header>
+    <!--    header      -->
+
+
+    <!--    nav      -->
+    <section class="nav" id="navbar">
+        <nav class="nav_container">
+            <div>
+                <a href="#" class="nav_link nav_logo ">
+                    <i class="fa-solid fa-bars nav_icon"></i>
+                    <span class="logo_name">
+               <i class="fab fa-youtube"></i>
+               kilikili
+             </span>
+                </a>
+
+                <div class="nav_list">
+                    <div class="nav_items navtop">
+                        <a href="#" class="nav_link navtop active">
+                            <i class="fa fa-house nav_icon"></i>
+                            <span class="nav_name">首页</span>
+                        </a>
+                        
+                        <a href="#" class="nav_link navtop">
+                            <i class="fa-brands fa-tiktok nav_icon" onclick="javascript:window.open('https://www.douyin.com/')"></i>
+                            <span class="nav_name" onclick="javascript:window.open('https://www.douyin.com/')">短视频</span>
+                        </a>
+                        <a href="./html/评论首页.html" class="nav_link navtop">
+                            <i class="fa-solid fa-users nav_icon"></i>
+                            <span class="nav_name">论坛</span>
+                        </a>
+                        <a href="./shop.html" class="nav_link navtop">  
+                            <i class="fa-solid fa-shopping-cart nav_icon"></i>  
+                            <span class="nav_name">购物</span>  
+                        </a>
+                    </div>
+
+                    <div class="nav_items subscribe-container">
+                        <h3 class="nav_subititle">最近消息</h3>
+
+                        <a href="#" class="nav_link">
+                            <img class="subscribe" src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-people-victoruler-flat-victoruler-5.png" alt="">
+                            <span class="nav_name">石原里美</span>
+                        </a>
+                        <a href="#" class="nav_link">
+                            <img class="subscribe" src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-occupation-and-people-victoruler-flat-victoruler.png" />
+                            <span class="nav_name">桥本环奈</span>
+                        </a>
+                        <a href="#" class="nav_link">
+                            <img class="subscribe" src="https://img.icons8.com/external-victoruler-linear-colour-victoruler/64/000000/external-boy-children-avatar-victoruler-linear-colour-victoruler-2.png" />
+                            <span class="nav_name">山下智久</span>
+                        </a>
+                        <a href="#" class="nav_link">
+                            <img class="subscribe" src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-children-avatar-victoruler-flat-victoruler-12.png" />
+                            <span class="nav_name">张本美和</span>
+                        </a>
+                       
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!--    nav      -->
+
+
+    <main>
+        <section class="video_content grid">
+
+            <div class="video_items">
+                <a href="single-page.html" target="_blank">
+                    <img src="images/video_images/以色列.jpg" alt="">
+                </a>
+                <div class="details flex">
+                    <div class="img">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <div class="heading">
+                        <p>以色列</p>
+                        <span>大小<i class="fa fa-circle-check"></i> </span>
+                        <span>56.7M .1 周前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video_items">
+                <a href="single-page.html" target="_blank">
+                    <img src="images/video_images/加沙.jpg" alt="">
+                </a>
+                <div class="details flex">
+                    <div class="img">
+                        <img src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-people-victoruler-flat-victoruler-5.png" />
+                    </div>
+                    <div class="heading">
+                        <p>加沙</p>
+                        <span>大小<i class="fa fa-circle-check"></i> </span>
+                        <span>56.7M .1 周前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video_items">
+                <a href="single-page.html" target="_blank">
+                    <img src="images/video_images/巴勒斯坦.jpg" alt="">
+                </a>
+                <div class="details flex">
+                    <div class="img">
+                        <img src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-occupation-and-people-victoruler-flat-victoruler.png" />
+                    </div>
+                    <div class="heading">
+                        <p>巴勒斯坦</p>
+                        <span>大小<i class="fa fa-circle-check"></i> </span>
+                        <span>56.7M .1 周前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video_items">
+                <a href="single-page.html" target="_blank">
+                    <img src="images/video_images/俄罗斯.jpg" alt="">
+                </a>
+                <div class="details flex">
+                    <div class="img">
+                        <img src="https://img.icons8.com/external-victoruler-linear-colour-victoruler/64/000000/external-boy-children-avatar-victoruler-linear-colour-victoruler-2.png" />
+                    </div>
+                    <div class="heading">
+                        <p>俄罗斯</p>
+                        <span>大小<i class="fa fa-circle-check"></i> </span>
+                        <span>56.7M .1 周前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video_items">
+                <a href="single-page.html" target="_blank">
+                    <img src="images/video_images/乌克兰.jpg" alt="">
+                </a>
+                <div class="details flex">
+                    <div class="img">
+                        <img src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-children-avatar-victoruler-flat-victoruler-12.png" />
+                    </div>
+                    <div class="heading">
+                        <p>乌克兰</p>
+                        <span>大小<i class="fa fa-circle-check"></i> </span>
+                        <span>56.7M .1 周前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video_items">
+                <a href="single-page.html" target="_blank">
+                    <img src="images/video_images/核废水.jpg" alt="">
+                </a>
+                <div class="details flex">
+                    <div class="img">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <div class="heading">
+                        <p>核废水</p>
+                        <span>大小<i class="fa fa-circle-check"></i> </span>
+                        <span>56.7M .1 周前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video_items">
+                <a href="single-page.html" target="_blank">
+                    <img src="images/video_images/习近平.jpg" alt="">
+                </a>
+                <div class="details flex">
+                    <div class="img">
+                        <img src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-people-victoruler-flat-victoruler-5.png" />
+                    </div>
+                    <div class="heading">
+                        <p>习近平</p>
+                        <span>大小<i class="fa fa-circle-check"></i> </span>
+                        <span>56.7M .1 周前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video_items">
+                <a href="single-page.html" target="_blank">
+                    <img src="images/video_images/NBA.jpg" alt="">
+                </a>
+                <div class="details flex">
+                    <div class="img">
+                        <img src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-occupation-and-people-victoruler-flat-victoruler.png" />
+                    </div>
+                    <div class="heading">
+                        <p>NBA</p>
+                        <span>大小<i class="fa fa-circle-check"></i> </span>
+                        <span>56.7M .1 周前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video_items">
+                <a href="single-page.html" target="_blank">
+                    <img src="images/video_images/普金.jpg" alt="">
+                </a>
+                <div class="details flex">
+                    <div class="img">
+                        <img src="https://img.icons8.com/external-victoruler-linear-colour-victoruler/64/000000/external-boy-children-avatar-victoruler-linear-colour-victoruler-2.png" />
+                    </div>
+                    <div class="heading">
+                        <p>普京</p>
+                        <span>大小<i class="fa fa-circle-check"></i> </span>
+                        <span>56.7M .1 周前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video_items">
+                <a href="single-page.html" target="_blank">
+                    <img src="images/video_images/Java.jpg" alt="">
+                </a>
+                <div class="details flex">
+                    <div class="img">
+                        <img src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-children-avatar-victoruler-flat-victoruler-12.png" />
+                    </div>
+                    <div class="heading">
+                        <p>Java</p>
+                        <span>大小<i class="fa fa-circle-check"></i> </span>
+                        <span>56.7M .1 周前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video_items">
+                <a href="single-page.html" target="_blank">
+                    <img src="images/video_images/特朗普.jpg" alt="">
+                </a>
+                <div class="details flex">
+                    <div class="img">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <div class="heading">
+                        <p>特朗普</p>
+                        <span>大小<i class="fa fa-circle-check"></i> </span>
+                        <span>56.7M .1 周前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video_items">
+                <a href="single-page.html" target="_blank">
+                    <img src="images/video_images/美国.jpg" alt="">
+                </a>
+                <div class="details flex">
+                    <div class="img">
+                        <img src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-people-victoruler-flat-victoruler-5.png" />
+                    </div>
+                    <div class="heading">
+                        <p>美国</p>
+                        <span>大小<i class="fa fa-circle-check"></i> </span>
+                        <span>56.7M .1 周前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video_items">
+                <a href="single-page.html" target="_blank">
+                    <img src="images/video_images/金正恩.jpg" alt="">
+                </a>
+                <div class="details flex">
+                    <div class="img">
+                        <img src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-occupation-and-people-victoruler-flat-victoruler.png" />
+                    </div>
+                    <div class="heading">
+                        <p>金正恩</p>
+                        <span>大小<i class="fa fa-circle-check"></i> </span>
+                        <span>56.7M .1 周前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video_items">
+                <a href="single-page.html" target="_blank">
+                    <img src="images/video_images/web.jpg" alt="">
+                </a>
+                <div class="details flex">
+                    <div class="img">
+                        <img src="https://img.icons8.com/external-victoruler-linear-colour-victoruler/64/000000/external-boy-children-avatar-victoruler-linear-colour-victoruler-2.png" />
+                    </div>
+                    <div class="heading">
+                        <p>web</p>
+                        <span>大小<i class="fa fa-circle-check"></i> </span>
+                        <span>56.7M .1 周前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video_items">
+                <a href="single-page.html" target="_blank">
+                    <img src="images/video_images/彭家声.jpg" alt="">
+                </a>
+                <div class="details flex">
+                    <div class="img">
+                        <img src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-children-avatar-victoruler-flat-victoruler-12.png" />
+                    </div>
+                    <div class="heading">
+                        <p>彭家声</p>
+                        <span>大小<i class="fa fa-circle-check"></i> </span>
+                        <span>56.7M .1 周前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video_items">
+                <a href="single-page.html" target="_blank">
+                    <img src="images/video_images/姚明.jpg" alt="">
+                </a>
+                <div class="details flex">
+                    <div class="img">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <div class="heading">
+                        <p>姚明</p>
+                        <span>大小<i class="fa fa-circle-check"></i> </span>
+                        <span>56.7M .1 周前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video_items">
+                <a href="single-page.html" target="_blank">
+                    <img src="images/video_images/湖人.jpg" alt="">
+                </a>
+                <div class="details flex">
+                    <div class="img">
+                        <img src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-people-victoruler-flat-victoruler-5.png" />
+                    </div>
+                    <div class="heading">
+                        <p>湖人</p>
+                        <span>大小<i class="fa fa-circle-check"></i> </span>
+                        <span>56.7M .1 周前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video_items">
+                <a href="single-page.html" target="_blank">
+                    <img src="images/video_images/韩国.jpg" alt="">
+                </a>
+                <div class="details flex">
+                    <div class="img">
+                        <img src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-occupation-and-people-victoruler-flat-victoruler.png" />
+                    </div>
+                    <div class="heading">
+                        <p>韩国</p>
+                        <span>大小<i class="fa fa-circle-check"></i> </span>
+                        <span>56.7M .1 周前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video_items">
+                <a href="single-page.html" target="_blank">
+                    <img src="images/video_images/菲律宾.jpg" alt="">
+                </a>
+                <div class="details flex">
+                    <div class="img">
+                        <img src="https://img.icons8.com/external-victoruler-linear-colour-victoruler/64/000000/external-boy-children-avatar-victoruler-linear-colour-victoruler-2.png" />
+                    </div>
+                    <div class="heading">
+                        <p>菲律宾</p>
+                        <span>大小<i class="fa fa-circle-check"></i> </span>
+                        <span>56.7M .1 周前</span>
+                    </div>
+                </div>
+            </div>
+            <div class="video_items">
+                <a href="single-page.html" target="_blank">
+                    <img src="images/video_images/蒙古.jpg" alt="">
+                </a>
+                <div class="details flex">
+                    <div class="img">
+                        <img src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-children-avatar-victoruler-flat-victoruler-12.png" />
+                    </div>
+                    <div class="heading">
+                        <p>蒙古</p>
+                        <span>大小<i class="fa fa-circle-check"></i> </span>
+                        <span>56.7M .1 周前</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="js/main.js" charset="utf-8"></script>
+
+</body>
+
+</html>

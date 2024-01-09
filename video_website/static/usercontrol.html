@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+		<meta name="author" content="AdminKit">
+		<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+		<link rel="canonical" href="https://demo-basic.adminkit.io/" />
+
+		<title>后台管理系统</title>
+
+		<link href="css/app.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/usercontrol.css">
+		<style type="text/css">
+			input[type="file"]{
+				width: 55px;
+				height: 26px;
+				background-size: cover;
+				background: none;
+				cursor: pointer;
+				border: none;
+				color: white;
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<nav id="sidebar" class="sidebar js-sidebar">
+				<div class="sidebar-content js-simplebar">
+					<a class="sidebar-brand" href="admin.html">
+						<span class="align-middle">后台管理系统</span>
+					</a>
+
+					<ul class="sidebar-nav">
+						<li class="sidebar-header">
+							个人
+						</li>
+
+
+
+						<li class="sidebar-item">
+							<a class="sidebar-link" href="admin.html">
+								<i class="align-middle" data-feather="user"></i> <span class="align-middle">个人资料</span>
+							</a>
+						</li>
+						
+						<li class="sidebar-item active">
+							<a class="sidebar-link" href="usercontrol.html">
+								<i class="align-middle" data-feather="user"></i> <span class="align-middle">用户管理</span>
+							</a>
+						</li>
+					</ul>
+
+
+				</div>
+			</nav>
+
+			<div class="main">
+				<nav class="navbar navbar-expand navbar-light navbar-bg">
+					<a class="sidebar-toggle js-sidebar-toggle">
+						<i class="hamburger align-self-center"></i>
+					</a>
+
+					<div class="navbar-collapse collapse">
+						<ul class="navbar-nav navbar-align">
+							<li class="nav-item dropdown">
+								<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+									<div class="position-relative">
+										<i class="align-middle" data-feather="bell"></i>
+										<span class="indicator">4</span>
+									</div>
+								</a>
+								<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
+									<div class="dropdown-menu-header">4条新信息</div>
+									<div class="list-group">
+										<a href="#" class="list-group-item">
+											<div class="row g-0 align-items-center">
+												<div class="col-2">
+													<i class="text-danger" data-feather="alert-circle"></i>
+												</div>
+												<div class="col-10">
+													<div class="text-dark">更新已完成</div>
+													<div class="text-muted small mt-1">重新启动服务器以完成更新</div>
+													<div class="text-muted small mt-1">30分前</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="list-group-item">
+											<div class="row g-0 align-items-center">
+												<div class="col-2">
+													<i class="text-warning" data-feather="bell"></i>
+												</div>
+												<div class="col-10">
+													<div class="text-dark">照顾好自己</div>
+													<div class="text-muted small mt-1">你已工作3个小时，请注意休息</div>
+													<div class="text-muted small mt-1">2小时前</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="list-group-item">
+											<div class="row g-0 align-items-center">
+												<div class="col-2">
+													<i class="text-primary" data-feather="home"></i>
+												</div>
+												<div class="col-10">
+													<div class="text-dark">在IP为192.186.1.8登录</div>
+													<div class="text-muted small mt-1">5小时前</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="list-group-item">
+											<div class="row g-0 align-items-center">
+												<div class="col-2">
+													<i class="text-success" data-feather="user-plus"></i>
+												</div>
+												<div class="col-10">
+													<div class="text-dark">新的连接</div>
+													<div class="text-muted small mt-1">小郑同学同意了你的好友申请.</div>
+													<div class="text-muted small mt-1">14小时前</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="dropdown-menu-footer">
+										<a href="#" class="text-muted">显示所有通知</a>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-bs-toggle="dropdown">
+									<div class="position-relative">
+										<i class="align-middle" data-feather="message-square"></i>
+									</div>
+								</a>
+								<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="messagesDropdown">
+									<div class="dropdown-menu-header">
+										<div class="position-relative">
+											4条新信息
+										</div>
+									</div>
+									<div class="list-group">
+										<a href="javascript:;" class="list-group-item">
+											<div class="row g-0 align-items-center">
+												<div class="col-2">
+													<img src="img/avatars/avatar-5.jpg" class="avatar img-fluid rounded-circle" alt="Vanessa Tucker">
+												</div>
+												<div class="col-10 ps-2">
+													<div class="text-dark">小王同学</div>
+													<div class="text-muted small mt-1">作业还有15分钟后截止噢，请按时提交作业</div>
+													<div class="text-muted small mt-1">15分钟前</div>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:;" class="list-group-item">
+											<div class="row g-0 align-items-center">
+												<div class="col-2">
+													<img src="img/avatars/avatar-2.jpg" class="avatar img-fluid rounded-circle" alt="William Harris">
+												</div>
+												<div class="col-10 ps-2">
+													<div class="text-dark">小明同学</div>
+													<div class="text-muted small mt-1">下午去打球吗</div>
+													<div class="text-muted small mt-1">2小时前</div>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:;" class="list-group-item">
+											<div class="row g-0 align-items-center">
+												<div class="col-2">
+													<img src="img/avatars/avatar-4.jpg" class="avatar img-fluid rounded-circle" alt="Christina Mason">
+												</div>
+												<div class="col-10 ps-2">
+													<div class="text-dark">郑经理</div>
+													<div class="text-muted small mt-1">拍了拍你，并要求你月底提交财政报表</div>
+													<div class="text-muted small mt-1">4小时前</div>
+												</div>
+											</div>
+										</a>
+										<a href="javascript:;" class="list-group-item">
+											<div class="row g-0 align-items-center">
+												<div class="col-2">
+													<img src="img/avatars/avatar-3.jpg" class="avatar img-fluid rounded-circle" alt="Sharon Lessman">
+												</div>
+												<div class="col-10 ps-2">
+													<div class="text-dark">罗主管</div>
+													<div class="text-muted small mt-1">晚上来公司一趟，公司路由器坏了</div>
+													<div class="text-muted small mt-1">5小时前</div>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="dropdown-menu-footer">
+										<a href="javascript:;" class="text-muted">展示所有信息</a>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
+									<i class="align-middle" data-feather="settings"></i>
+								</a>
+
+								<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+									<img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded me-1" alt="Charles Hall" id="account_Image" /> <span class="text-dark" id="account_name">Charles
+										Hall</span>
+								</a>
+								<div class="dropdown-menu dropdown-menu-end">
+									<a class="dropdown-item" href="admin.html"><i class="align-middle me-1" data-feather="user"></i>
+										个人资料</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="javascript:;"><i class="align-middle me-1" data-feather="settings"></i> 设置与隐私</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="pages-sign-in.html" id="logout">退出登录</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+
+				<main class="content">
+					<div class="container-fluid p-0">
+
+						<div class="row">
+							<div class="card mb-3">
+								<div class="card-header">
+									<h5 class="card-title mb-0">用户管理</h5>
+									<div class="InsertAndSearch">
+										<div class="InsertNew"><button>添加用户</button></div>
+										<div class="search">搜索：<input type="text" id="searchInput"><button class="searchfor">查询</button></div>
+									</div>
+								</div>
+								<div class="card-body text-center">
+									<table class="everyone">
+										<thead>
+											<tr>
+												<td>ID</td>
+												<td>用户名</td>
+												<td>账号</td>
+												<td>密码</td>
+												<td>权限</td>
+												<td>操作</td>
+											</tr>
+										</thead>
+										<tbody class="realEveryone"></tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</main>
+
+				<footer class="footer">
+					<div class="container-fluid">
+						<div class="row text-muted">
+							<div class="col-6 text-start">
+								<p class="mb-0">
+									<a class="text-muted" href="javascript:;"><strong>后台管理系统</strong></a> - &copy;<a class="text-muted"
+									 href="javascript:;"><strong>copyright by Twelve Group</strong></a> 
+								</p>
+							</div>
+							<div class="col-6 text-end">
+								<ul class="list-inline">
+									<li class="list-inline-item">
+										<a class="text-muted" href="javascript:;">支持</a>
+									</li>
+									<li class="list-inline-item">
+										<a class="text-muted" href="javascript:;">帮助中心</a>
+									</li>
+									<li class="list-inline-item">
+										<a class="text-muted" href="javascript:;">隐私协议</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+			
+			<div class="chooseUserInformation" id="chooseUserInformation">
+				<div class="bgColor"></div>
+				<div class="choose_father">
+					<div class="choose_show">
+						<div class="choose_first">
+							<div class="choose_text">
+								<h5 class="card-title mb-0">请选择要对该用户的操作：</h5>
+								<ul>
+									<li>1.修改用户名称</li>
+									<li>2.修改密码</li>
+									<li>3.修改权限</li>
+								</ul>
+							</div>
+							<div class="close" id="close">x</div>
+						</div>
+						<div class="choose_second">
+							<div class="return">&lt;</div>
+							<div class="choose_second_text">
+								新用户名：<input type="text" id="newName" value="" />
+							</div>
+							<div class="checkTheUsername">
+								<div class="btn btn-primary control_Yes">确认</div><div class="control_No">取消</div>
+							</div>
+							<div class="close" id="close">x</div>
+						</div>
+						<div class="choose_second">
+							<div class="return">&lt;</div>
+							<div class="choose_second_text changePassword">
+								请输入旧密码：<input type="password" id="oldPassword"/><br>
+								请输入新密码：<input type="password" id="newPassword"/><br>
+								确&nbsp;&nbsp;&nbsp;认&nbsp;&nbsp;密&nbsp;&nbsp;码：<input type="password" id="checkPassword"/>
+								<div class="checkThePassword">
+									<div class="btn btn-primary control_Yes">确认</div><div class="control_No">取消</div>
+								</div>
+							</div>
+							<div class="close" id="close">x</div>
+						</div>
+						<div class="choose_second">
+							<div class="return">&lt;</div>
+							<div class="pleaseWait">暂时不支持，敬请期待</div>
+							<div class="close" id="close">x</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="checkAndDelete">
+				<div class="checkAndDelete_bg"></div>
+				<div class="choose">
+					<div class="choose_title">
+						确认要这样？
+					</div>
+					<div class="choose_content">
+						<h5 class="card-title mb-0">更改之后将无法恢复，确认要这样吗？</h5>
+					</div>
+					<div class="choose_button">
+						<div class="btn btn-primary choose_Yes">确认</div>
+						<div class="choose_No">取消</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="InsertUserInformation">
+				<div class="InsertUserInformation_bg"></div>
+				<div class="UserInformation">
+					<h5 class="card-title mb-0">请填写用户信息</h5>
+					用户名：<input type="text" id="Username"/><br/>
+					账&nbsp;&nbsp;&nbsp;号：<input type="text" id="UserAccount" /><br/>
+					密&nbsp;&nbsp;&nbsp;码：<input type="password" id="UserPassword" /><br/>
+					权&nbsp;&nbsp;&nbsp;限：<input type="radio" id="normal_choose" checked/>普通用户 <input type="radio" id="superAdmin_choose" value="" />管理员 <br/>
+					<div class="submitTheInformation"><div class="btn btn-primary submitTheInformation_Yes">提交</div><div class="submitTheInformation_No">取消</div></div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script>
+
+		<script type="text/javascript" src="js/controlAnimation.js"></script>
+
+		<script src="js/usercontrol.js"></script>
+
+		<script src="js/app.js"></script>
+
+		<script src="js/base.js"></script>
+		
+	</body>
+
+</html>

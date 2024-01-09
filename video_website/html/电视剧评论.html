@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>电视剧评论</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+			integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS"
+			crossorigin="anonymous" />
+			<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+			
+		<link rel="stylesheet" href="../css/评论.css" />
+		
+	</head>
+	<body>
+		<div class="total">
+			<div class="top">
+				<div class="top-left">
+					<a target="_blank" href="./评论首页.html" > << 返回 </a>
+					<a target="_blank" href="./评论首页.html" >评论首页</a>
+					<a target="_blank" href="./电影评论.html" >电影评论</a>
+					<a target="_blank" href="./电视剧评论.html" >电视剧评论</a>
+					<a target="_blank" href="./动漫评论.html" >动漫评论</a>
+				</div>
+				<div class="top-center">
+					<div class="search">
+						
+						<input id="search-content"/><i class="fa-solid fa-magnifying-glass"  onclick="search()"></i>
+					</div>
+					<ul id="search-results"></ul>
+				</div>
+				<div class="top-right">
+					<div id="history" onclick="toggleHistory()">
+						<span>历史记录</span>
+						<div id="history-content" style="display: none;">
+							<a  class="myhistory" href=""></a>
+							<a class="myhistory" href=""></a>
+							<a class="myhistory" href=""></a>
+							<a  class="myhistory" href=""></a>
+							<a class="myhistory" href=""></a>
+							<a class="myhistory" href=""></a>
+							<a class="myhistory" href=""></a>	
+										
+						</div>
+					</div>
+					
+					<!-- 收藏 -->
+										
+					<div id="collection" onclick="toggleColection()">
+						<span>收藏</span>
+						<div id="collection-content" >
+							<a class="mycollection" href=""></a>
+							<a class="mycollection"  href=""></a>
+							<a class="mycollection"  href=""></a>
+							<a class="mycollection"  href=""></a>
+							<a class="mycollection"  href=""></a>
+							<a class="mycollection"  href=""></a>
+							<a class="mycollection"  href=""></a>
+										
+										
+						</div>
+					</div>
+					<!-- 消息 -->
+					<div id="message" onclick="togglemessage()">
+						<span>消息</span>
+						<div id="message-content" >
+							<a class="mynessage" href=".">回复我的</a>
+							<a class="mynessage" href="">@我的</a>
+							<a class="mynessage" href="./系统通知.html" target="_blank">系统消息</a>
+							<a class="mynessage" href="./聊天界面.html" target="_blank">我的消息</a>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+			<div class="center">
+				<div class="center-left" id="article-list">
+					<div class="article">
+						<a target="_blank" href="http://www.cflac.org.cn/ys/ysds/dspl/202211/t20221117_1265210.html">
+							<img src="" alt="">
+						</a>
+						<div class="article-right">
+							<h3>
+								<a target="_blank" href="http://www.cflac.org.cn/ys/ysds/dspl/202211/t20221117_1265210.html">
+									
+								</a>
+							</h3>
+							<p>　</p>
+						 <div class="article-module"><i class="fa fa-heart-o"></i></div>
+						</div>
+					</div>
+					<div class="article">
+						<a target="_blank" href="http://www.cflac.org.cn/ys/ysds/dspl/202206/t20220609_1248347.html">
+							<img src="" alt="">
+						</a>
+						<div class="article-right">
+							<h3>
+								<a target="_blank" href="http://www.cflac.org.cn/ys/ysds/dspl/202206/t20220609_1248347.html">
+									
+								</a>
+							</h3>
+							<p>　</p>
+						 <div class="article-module"><i class="fa fa-heart-o"></i></div>
+						</div>
+					</div>
+					<div class="article">
+						<a target="_blank" href="http://www.cflac.org.cn/ys/ysds/dspl/202205/t20220523_1246676.html">
+							<img src="" alt="">
+						</a>
+						<div class="article-right">
+							<h3>
+								<a target="_blank" href="http://www.cflac.org.cn/ys/ysds/dspl/202205/t20220523_1246676.html">
+									
+								</a>
+							</h3>
+							<p>　</p>
+						 <div class="article-module"><i class="fa fa-heart-o"></i></div>
+						</div>
+					</div>
+					<div class="article">
+						<a target="_blank" href="http://www.cflac.org.cn/ys/ysds/dspl/202204/t20220418_590482.html">
+							<img src="" alt="">
+						</a>
+						<div class="article-right">
+							<h3>
+								<a target="_blank" href="http://www.cflac.org.cn/ys/ysds/dspl/202204/t20220418_590482.html">
+									
+								</a>
+							</h3>
+							<p>　</p>
+						 <div class="article-module"><i class="fa fa-heart-o"></i></div>
+						</div>
+					</div>
+					<div class="article">
+						<a target="_blank" href="http://www.cflac.org.cn/ys/ysds/dspl/202202/t20220210_582695.html">
+							<img src="" alt="">
+						</a>
+						<div class="article-right">
+							<h3>
+								<a target="_blank" href="http://www.cflac.org.cn/ys/ysds/dspl/202202/t20220210_582695.html">
+									
+								</a>
+							</h3>
+							<p>　</p>
+						 <div class="article-module"><i class="fa fa-heart-o"></i></div>
+						</div>
+					</div>
+					<div class="article">
+						<a target="_blank" href="http://www.cflac.org.cn/ys/ysds/dspl/202204/t20220418_590481.html">
+							<img src="" alt="">
+						</a>
+						<div class="article-right">
+							<h3>
+								<a target="_blank" href="http://www.cflac.org.cn/ys/ysds/dspl/202204/t20220418_590481.html">
+									
+								</a>
+							</h3>
+							<p>　</p>
+						 <div class="article-module"><i class="fa fa-heart-o"></i></div>
+						</div>
+					</div>
+					<div class="article">
+						<a target="_blank" href="http://www.cflac.org.cn/ys/ysds/dspl/202203/t20220301_584621.html">
+							<img src="" alt="">
+						</a>
+						<div class="article-right">
+							<h3>
+								<a target="_blank" href="http://www.cflac.org.cn/ys/ysds/dspl/202203/t20220301_584621.html">
+									
+								</a>
+							</h3>
+							<p>　</p>
+						 <div class="article-module"><i class="fa fa-heart-o"></i></div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="center-right">
+					<div class="list1">
+						<div class="list1-top">LV.1</div>
+						<div class="list1-center">
+							<div onclick="openCreatePage()"><img src="../img/背景/写文章.png" alt="" /><p>写文章</p></div>
+							<div><img src="../img/背景/回答.png" alt=""><p>写评论</p></div>
+							<div><img src="../img/背景/写想法.png" alt=""><p>写想法</p></div>
+							
+							
+							
+						</div>
+						<div class="list1-bottom">
+							<p>>>进入创作中心</p>
+						</div>
+					</div>
+					<div class="list2">
+						
+						<!-- alt：图片路径失败时替换显示内容 -->
+						<img src="../img/动漫/灵笼.png" alt="" class="slide">
+						<img src="../img/动漫/西游记.png" alt="" class="slide" style="display: none;" >
+						<img src="../img/电影/梅艳芳.png" alt="" class="slide" style="display: none;">
+						<div class="last" onclick="last()"><i class="fa fa-chevron-circle-left"></i></div>
+						<div class="next" onclick="next()"><i class="fa fa-chevron-circle-right"></i></div>
+					</div>
+					<div class="list3">
+						<div class="list3-top">
+							<p>随机推荐</p>
+							<p class="refresh" id="refreshButton" onclick="handleClick()">刷新</p>
+						</div>
+						
+						<div class="list3-bottom" id="titleContainer">
+							<a href="https://www.cflac.org.cn/ys/dy/yp/202303/t20230310_1274669.html" class="news-link">多方位“包容、理解和支持”才能成就体育电影</a>
+								<a href="https://www.cflac.org.cn/ys/dy/yp/202302/t20230227_1273633.html" class="news-link">电影《风再起时》：香港新文艺片的创作转向</a>
+								<a href="https://www.cflac.org.cn/ys/dy/yp/202302/t20230207_1272117.html" class="news-link">饶曙光丨从“春节档”看中国电影结构性调整与升级</a>
+								<a href="https://www.cflac.org.cn/ys/dy/yp/202302/t20230207_1272115.html" class="news-link">《流浪地球2》：探索宏观宇宙 思考人类未来</a>
+								<a href="https://www.cflac.org.cn/ys/dy/yp/202302/t20230215_1272723.html" class="news-link">电影《风再起时》热映——文艺质感重绎“香港往事”</a>
+								<a href="https://www.cflac.org.cn/ys/dy/yp/202302/t20230215_1272738.html" class="news-link">《满江红》：一琢磨，空悲切！</a>
+							</div>
+					</div>
+					<div class="list4">
+						<div class="list4-top">
+							<p>随机推荐</p>
+							<p class="refresh">刷新</p>
+						</div>
+						<div class="list4-bottom">
+							<button class="tag1">电影</button>
+							<button class="tag2">电视剧</button>
+							<button class="tag3">动漫</button>
+							<button class="tag2">番剧</button>
+							<button class="tag1">国创</button>
+							<button class="tag3">综艺</button>
+							<button class="tag1">动画</button>
+							<button class="tag3">纪录片</button>
+							<button class="tag2">鬼畜</button>
+							<button class="tag2">娱乐</button>
+							<button class="tag3">影视</button>
+							<button class="tag1">生活</button>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="friend-link">
+					<div class="friend-link-top">
+						友情链接
+					</div>
+					<div class="friend-link-bottom">
+						<a target="_blank" href="https://www.bilibili.com/">哔哩哔哩</a>
+						<a target="_blank" href="https://youku.com/">优酷</a>
+						<a target="_blank" href="https://www.iqiyi.com/">爱奇艺</a>
+						<a target="_blank" href="https://v.qq.com/">腾讯视频</a>
+					</div>
+					
+				</div>
+				<div class="footer">
+					<div class="footer-top">
+						@ 第十二组  授权
+					</div>
+					<div class="footer-bottom">
+						2023年12月1日
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<script src="../js/电视剧评论.js"></script>
+		<script src="../js/new_file.js"></script>
+	</body>
+</html>
