@@ -1,2 +1,2 @@
 # Youtube-clone-html-js-css
-see master version
+see master version（master branch）
